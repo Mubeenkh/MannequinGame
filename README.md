@@ -1,2 +1,2 @@
-# MannequinGame
-Game Programming 2 Assignment 1
+# FirstGame
+Game Programming Assignment 1
