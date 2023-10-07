@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6839295194009860445}
+  - component: {fileID: 1409828266783990064}
   m_Layer: 0
   m_Name: PowerUpV
   m_TagString: Untagged
@@ -33,6 +34,18 @@ Transform:
   - {fileID: 6180525102924726194}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1409828266783990064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802375788564682842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f2d9a0fe6057e4a937ed114d6aef48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3735278268633606245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4932,7 +4945,6 @@ GameObject:
   - component: {fileID: 660953749677330264}
   - component: {fileID: 6356333648388573142}
   - component: {fileID: 5348953816259320631}
-  - component: {fileID: 259702145259171051}
   m_Layer: 0
   m_Name: YellowPowerUp
   m_TagString: PowerUp
@@ -5039,15 +5051,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burstParticle: {fileID: 6061645916997711742}
---- !u!114 &259702145259171051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3974178599585535895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cf92a9b646b82647b004a24ea715f77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
