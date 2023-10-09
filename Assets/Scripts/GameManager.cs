@@ -13,9 +13,19 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
-        DontDestroyOnLoad(Instance); 
-        }
+        // Instance = this;
+        // DontDestroyOnLoad(Instance); 
+
+        if (Instance != null && Instance != this) 
+        { 
+            Destroy(this); 
+        } 
+        else 
+        { 
+            Instance = this; 
+            // DontDestroyOnLoad(Instance); 
+        } 
+    }
     public void Start()
     {
         // Debug.Log("Score: " + Score + "pts");
@@ -23,6 +33,12 @@ public class GameManager : MonoBehaviour
         text = GameObject.FindWithTag("ScoreText");
         scoreText = (Text) text.GetComponent(typeof(Text));
         scoreText.text = "Score: " + (totalScore + Score).ToString() + " pts";
+    }
+    public void StartGame()
+    {
+        Score = 0;
+        totalScore = 0;
+        SceneManager.LoadScene("Level1");
     }
 
     public void AddScore()
